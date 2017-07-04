@@ -6,6 +6,12 @@ var func = function(){
     box.classList.add('animate')
 }
 
-var fun1 = function(){
+// var fun1 = function(){
+//     box.classList.remove('animate');
+// }
+
+box.addEventListener('animationend', function(){
+    console.log('ended');
     box.classList.remove('animate');
-}
+    
+})
